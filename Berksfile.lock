@@ -1,0 +1,13 @@
+{
+  "sources": {
+    "prepare-env": {
+      "path": "."
+    },
+    "yum-epel": {
+      "locked_version": "0.2.0"
+    },
+    "yum": {
+      "locked_version": "3.0.0"
+    }
+  }
+}

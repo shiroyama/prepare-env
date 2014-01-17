@@ -1,5 +1,5 @@
 .vagrant
-Berksfile.lock
+#Berksfile.lock
 *~
 *#
 .#*
@@ -13,3 +13,4 @@ Berksfile.lock
 bin/*
 .bundle/*
 
+/vendor
