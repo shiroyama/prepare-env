@@ -1,0 +1,11 @@
+upstream unicorn {
+    server unix:/tmp/unicorn.sock;
+}
+
+server {
+    listen 80 default_server;
+    server_name _;
+    location / {
+        proxy_pass http://unicorn;
+    }
+}
