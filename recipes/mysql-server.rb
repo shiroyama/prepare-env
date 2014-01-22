@@ -10,6 +10,14 @@
 
 include_recipe 'prepare-env::yum-repos'
 
-package "mysql-server" do
-    action :install
+# mysql-devel is necessary for "rails -d mysql"
+%w{mysql-server mysql-devel}.each do |pkg|
+    package pkg do
+        action :install
+    end
+end
+
+service "mysqld" do
+    supports :status => true, :restart => true, :reload => true
+    action [:enable, :start]
 end
