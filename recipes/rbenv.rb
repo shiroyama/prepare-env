@@ -11,7 +11,7 @@
 include_recipe 'rbenv::default'
 include_recipe 'rbenv::ruby_build'
 
-rbenv_ruby "2.0.0-p353" do
-    ruby_version "2.0.0-p353"
+rbenv_ruby node[:rbenv][:version] do
+    ruby_version node[:rbenv][:version]
     global true
 end

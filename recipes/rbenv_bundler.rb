@@ -11,5 +11,5 @@
 include_recipe 'prepare-env::rbenv'
 
 rbenv_gem "bundler" do
-    ruby_version "2.0.0-p353"
+    ruby_version node[:rbenv][:version]
 end

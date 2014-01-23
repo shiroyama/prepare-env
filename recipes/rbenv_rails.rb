@@ -25,5 +25,5 @@ ruby_block "resolv.conf" do
 end
 
 rbenv_gem "rails" do
-    ruby_version "2.0.0-p353"
+    ruby_version node[:rbenv][:version]
 end
