@@ -1,0 +1,12 @@
+{
+    "name": "prepare",
+    "default_attributes": {},
+    "override_attributes": {},
+    "json_class": "Chef::Role",
+    "description": "",
+    "chef_type": "role",
+    "run_list":[
+        "recipe[prepare-env::zsh]",
+        "recipe[prepare-env::screen]"
+    ]
+}

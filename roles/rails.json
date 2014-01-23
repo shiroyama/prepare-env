@@ -6,6 +6,9 @@
     "description": "",
     "chef_type": "role",
     "run_list":[
-        "recipe[prepare-env::rbenv_rails]"
+        "recipe[prepare-env::rbenv_bundler]",
+        "recipe[prepare-env::rbenv_rails]",
+        "recipe[prepare-env::nginx-rails]",
+        "recipe[prepare-env::mysql-server]"
     ]
 }
