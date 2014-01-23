@@ -1,11 +1,11 @@
-upstream unicorn {
-    server unix:/tmp/unicorn.sock;
+upstream <%=node["nginx"]["upstream"]%> {
+    server <%=node["rails"]["server"]["socket"]%>;
 }
 
 server {
-    listen 80 default_server;
+    listen <%=node["nginx"]["port"]%> default_server;
     server_name _;
     location / {
-        proxy_pass http://unicorn;
+        proxy_pass http://<%=node["nginx"]["upstream"]%>;
     }
 }
