@@ -9,3 +9,4 @@ version          '0.1.0'
 depends "yum"
 depends "yum-epel"
 depends "rbenv"
+depends "vim"

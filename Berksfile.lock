@@ -6,6 +6,9 @@
     "yum-epel": {
       "locked_version": "0.2.0"
     },
+    "vim": {
+      "locked_version": "1.1.2"
+    },
     "yum": {
       "locked_version": "3.0.0"
     },
