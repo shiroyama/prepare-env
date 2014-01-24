@@ -9,20 +9,26 @@
     "vim": {
       "locked_version": "1.1.2"
     },
+    "git": {
+      "locked_version": "2.8.4"
+    },
     "yum": {
       "locked_version": "3.0.0"
     },
     "rbenv": {
       "locked_version": "1.7.1"
     },
-    "git": {
-      "locked_version": "2.8.4"
+    "build-essential": {
+      "locked_version": "1.4.2"
+    },
+    "apt": {
+      "locked_version": "2.3.0"
+    },
+    "ohai": {
+      "locked_version": "1.1.12"
     },
     "dmg": {
       "locked_version": "2.0.8"
-    },
-    "build-essential": {
-      "locked_version": "1.4.2"
     },
     "windows": {
       "locked_version": "1.11.0"
@@ -32,12 +38,6 @@
     },
     "runit": {
       "locked_version": "1.4.6"
-    },
-    "apt": {
-      "locked_version": "2.3.0"
-    },
-    "ohai": {
-      "locked_version": "1.1.12"
     }
   }
 }
