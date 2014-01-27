@@ -17,3 +17,7 @@ default['vim']['source']['dependencies'] = default['vim']['source']['dependencie
 ### git
 default['git']['prefix']  = "/usr/local"
 default['git']['version'] = "1.8.2.1"
+
+### zsh
+default['zsh']['chsh'] = "yes"
+default['zsh']['user'] = "vagrant"
