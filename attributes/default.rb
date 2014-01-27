@@ -21,3 +21,8 @@ default['git']['version'] = "1.8.2.1"
 ### zsh
 default['zsh']['chsh'] = "yes"
 default['zsh']['user'] = "vagrant"
+
+### homesick
+default['homesick']['user']   = "vagrant"
+default['homesick']['repo']   = "https://github.com/FumihikoSHIROYAMA/dotfiles"
+default['homesick']['castle'] = "dotfiles"

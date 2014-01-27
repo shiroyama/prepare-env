@@ -10,6 +10,10 @@
 
 include_recipe 'git::source'
 
+package "git" do
+    action :remove
+end
+
 file "/etc/profile.d/git.sh" do
     owner "root"
     group "root"
