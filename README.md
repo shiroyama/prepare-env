@@ -35,9 +35,11 @@ unicorn は各 Rails アプリケーションの Gemfile に書くだろうと�
 
     $ bundle --path vendor/bundle
     $ bundle exec berks --path cookbooks
+    $ vagrant ssh-config --host default >> ~/.ssh/config
+    $ vagrant up
     $ bundle exec knife solo prepare default
     $ bundle exec knife solo cook default
-    $ vagrant ssh
+    $ vagrant ssh (or ssh default)
 
 おいっしいのう！
 
