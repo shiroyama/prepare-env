@@ -18,6 +18,7 @@ end
 rbenv_path = "#{node[:rbenv][:root_path]}/shims"
 
 bash "homesick" do
+    user node[:homesick][:user]
     environment "HOME" => "/home/#{node[:homesick][:user]}"
 
     code <<-EOS
