@@ -1,0 +1,5 @@
+{
+    "id"   : "default",
+    "name" : "vagrant",
+    "home" : "/home/vagrant"
+}
