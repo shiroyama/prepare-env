@@ -11,6 +11,7 @@
         "recipe[prepare-env::zsh]",
         "recipe[prepare-env::screen]",
         "recipe[prepare-env::vim]",
+        "recipe[prepare-env::lv]",
         "recipe[prepare-env::mlocate]"
     ]
 }
