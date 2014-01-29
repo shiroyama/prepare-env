@@ -6,9 +6,11 @@
     "description": "",
     "chef_type": "role",
     "run_list":[
+        "recipe[prepare-env::mkdir_tmp]",
         "recipe[prepare-env::rbenv_homesick]",
         "recipe[prepare-env::zsh]",
         "recipe[prepare-env::screen]",
-        "recipe[prepare-env::vim]"
+        "recipe[prepare-env::vim]",
+        "recipe[prepare-env::mlocate]"
     ]
 }
