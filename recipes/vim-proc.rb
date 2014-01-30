@@ -8,7 +8,7 @@
 # Licensed under the Apache License, Version 2.0 (the "License");
 #
 
-include_recipe 'prepare-env::vim'
+include_recipe 'prepare-env::vim-neobundle'
 
 default_user = data_bag_item("users", "default")
 

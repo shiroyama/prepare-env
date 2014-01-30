@@ -14,8 +14,11 @@ default["vim"]["source"]["version"] = "7.4"
 default['vim']['source']['configuration'] <<= " --enable-luainterp=yes --with-lua-prefix=/usr"
 default['vim']['source']['dependencies'] = default['vim']['source']['dependencies'].concat(%w{lua lua-devel})
 
+### vim-neobundle
 default['vim']['neobundle']['exec']  = "yes"
 default['vim']['neobundle']['repo']  = "https://github.com/Shougo/neobundle.vim"
+
+### vim-proc
 default['vim']['vimproc']['compile'] = "yes"
 
 ### git

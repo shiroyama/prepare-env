@@ -10,7 +10,7 @@
         "recipe[prepare-env::rbenv_homesick]",
         "recipe[prepare-env::zsh]",
         "recipe[prepare-env::screen]",
-        "recipe[prepare-env::vim]",
+        "recipe[prepare-env::vim-proc]",
         "recipe[prepare-env::lv]",
         "recipe[prepare-env::mlocate]"
     ]
