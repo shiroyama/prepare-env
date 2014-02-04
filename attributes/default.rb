@@ -33,3 +33,6 @@ default['zsh']['user'] = "vagrant"
 default['homesick']['user']   = "vagrant"
 default['homesick']['repo']   = "https://github.com/FumihikoSHIROYAMA/dotfiles"
 default['homesick']['castle'] = "dotfiles"
+
+### openjdk
+default['openjdk']['version'] = "1.7.0"
