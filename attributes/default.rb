@@ -36,3 +36,9 @@ default['homesick']['castle'] = "dotfiles"
 
 ### openjdk
 default['openjdk']['version'] = "1.7.0"
+
+### solr
+default['solr']['version']   = "4.6.1"
+default['solr']['repo_url']  = "http://ftp.riken.jp/net/apache/lucene/solr"
+default['solr']['file_type'] = "tgz"
+default['solr']['solr_home'] = "/usr/local/solr"
