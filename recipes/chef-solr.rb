@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: prepare-env
-# Recipe:: solr
+# Recipe:: chef-solr
 # Author:: Fumihiko Shiroyama<fu.shiroyama@gmail.com>
 #
 # Copyright (C) 2014 Fumihiko Shiroyama
