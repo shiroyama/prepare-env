@@ -34,14 +34,15 @@ unicorn は各 Rails アプリケーションの Gemfile に書くだろうと�
 # Usage
 
     $ bundle --path vendor/bundle
-    $ bundle exec berks --path cookbooks
+    $ bundle exec berks install # ~/.berkshelf にインストールされる
     $ vagrant ssh-config --host default >> ~/.ssh/config
     $ vagrant up
     $ bundle exec knife solo prepare default
     $ bundle exec knife solo cook default
     $ vagrant ssh (or ssh default)
 
-おいっしいのう！
+※ 元は `berkes install --path ./cookbooks` にしていたのだが、何か遅いのでシステムグローバルな .berkshelf 以下に cookbooks をダウンロードするように変更した。  
+意味ないかも知れん。自信ない。
 
 # Attributes
 

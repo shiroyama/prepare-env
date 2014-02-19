@@ -6,7 +6,6 @@
 \#*#
 .*.sw[a-z]
 *.un~
-/cookbooks
 
 # Bundler
 #Gemfile.lock
