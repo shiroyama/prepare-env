@@ -1,0 +1,6 @@
+default["solr"]["port"] = "8984"
+default["solr"]["core"]["repo"] = "https://github.com/FumihikoSHIROYAMA/solr-sample-cores.git"
+default["solr"]["core"]["default"]["delete"]              = "true"
+default["solr"]["core"]["default"]["delete_index"]        = "true"
+default["solr"]["core"]["default"]["delete_data_dir"]     = "true"
+default["solr"]["core"]["default"]["delete_instance_dir"] = "true"
