@@ -9,6 +9,7 @@
         "recipe[prepare-env::rbenv_bundler]",
         "recipe[prepare-env::rbenv_rails]",
         "recipe[prepare-env::nginx-rails]",
-        "recipe[prepare-env::mysql-server]"
+        "recipe[prepare-env::mysql-server]",
+        "recipe[prepare-env::image_magick]"
     ]
 }

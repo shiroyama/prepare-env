@@ -21,7 +21,7 @@
       "ref": "acb53dc47c899afc0e7198b16b8a02c088545b24"
     },
     "yum": {
-      "locked_version": "3.1.0"
+      "locked_version": "3.1.2"
     },
     "rbenv": {
       "locked_version": "1.7.1"
