@@ -84,4 +84,11 @@ Vagrant.configure("2") do |config|
   #       "recipe[prepare-env::default]"
   #   ]
   # end
+
+  # to fasten network
+  # see https://github.com/mitchellh/vagrant/issues/1172
+  config.vm.provider :virtualbox do |vb|
+    vb.customize ["modifyvm", :id, "--natdnsproxy1", "off"]
+    vb.customize ["modifyvm", :id, "--natdnshostresolver1", "off"]
+  end
 end
