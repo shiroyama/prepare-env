@@ -12,6 +12,8 @@
         "recipe[prepare-env::screen]",
         "recipe[prepare-env::vim-proc]",
         "recipe[prepare-env::lv]",
-        "recipe[prepare-env::mlocate]"
+        "recipe[prepare-env::mlocate]",
+        "recipe[prepare-env::tree]",
+        "recipe[prepare-env::lsof]"
     ]
 }
