@@ -25,7 +25,7 @@ homesick の設定を変えるために `default['homesick']['repo']` をあな�
 
 unicorn は各 Rails アプリケーションの Gemfile に書くだろうと想定してここではインストールしていないが、nginx の設定で upstream の unicorn と接続する設定を定義してあるので `default["rails"]["server"]["socket"]` あたりの attribute は注意する必要がある。
 
-初期状態で実行されるレシピは nodes/default.json を参照のこと。適宜変更されたい。
+初期状態で実行されるレシピは nodes/rails.json を参照のこと。適宜変更されたい。
 
 # Requirements
 
@@ -35,18 +35,18 @@ unicorn は各 Rails アプリケーションの Gemfile に書くだろうと�
 
     $ bundle --path vendor/bundle
     $ bundle exec berks install # ~/.berkshelf にインストールされる
-    $ vagrant ssh-config --host default >> ~/.ssh/config
-    $ vagrant up
-    $ bundle exec knife solo prepare default
-    $ bundle exec knife solo cook default
-    $ vagrant ssh (or ssh default)
+    $ vagrant ssh-config rails --host rails >> ~/.ssh/config
+    $ vagrant up rails
+    $ bundle exec knife solo prepare rails
+    $ bundle exec knife solo cook rails
+    $ vagrant ssh (or ssh rails)
 
 ※ 元は `berkes install --path ./cookbooks` にしていたのだが、何か遅いのでシステムグローバルな .berkshelf 以下に cookbooks をダウンロードするように変更した。  
 意味ないかも知れん。自信ない。
 
 # Attributes
 
-`$ cat ./attributes/default.rb`
+`$ cat ./attributes/rails.rb`
 
 # Recipes
 
