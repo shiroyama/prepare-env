@@ -21,34 +21,34 @@
       "ref": "acb53dc47c899afc0e7198b16b8a02c088545b24"
     },
     "yum": {
-      "locked_version": "3.1.2"
+      "locked_version": "3.1.6"
     },
     "rbenv": {
       "locked_version": "1.7.1"
     },
     "build-essential": {
-      "locked_version": "1.4.2"
+      "locked_version": "2.0.0"
     },
     "apt": {
       "locked_version": "2.3.8"
     },
     "ohai": {
-      "locked_version": "1.1.12"
+      "locked_version": "2.0.0"
     },
     "dmg": {
-      "locked_version": "2.1.4"
+      "locked_version": "2.2.0"
     },
     "windows": {
       "locked_version": "1.30.0"
     },
     "chef_handler": {
-      "locked_version": "1.1.4"
+      "locked_version": "1.1.5"
     },
     "runit": {
-      "locked_version": "1.5.8"
+      "locked_version": "1.5.10"
     },
     "java": {
-      "locked_version": "1.19.2"
+      "locked_version": "1.22.0"
     }
   }
 }
