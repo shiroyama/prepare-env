@@ -13,3 +13,4 @@ bin/*
 .bundle/*
 
 /vendor
+/cookbooks

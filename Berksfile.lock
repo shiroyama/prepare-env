@@ -1,54 +1,47 @@
-{
-  "sources": {
-    "prepare-env": {
-      "path": "."
-    },
-    "yum-epel": {
-      "locked_version": "0.2.0"
-    },
-    "yum-repoforge": {
-      "locked_version": "0.1.4"
-    },
-    "vim": {
-      "locked_version": "1.1.2"
-    },
-    "git": {
-      "locked_version": "2.8.4"
-    },
-    "chef-solr": {
-      "locked_version": "0.1.2",
-      "git": "https://github.com/vimtaku/chef-solr",
-      "ref": "acb53dc47c899afc0e7198b16b8a02c088545b24"
-    },
-    "yum": {
-      "locked_version": "3.1.6"
-    },
-    "rbenv": {
-      "locked_version": "1.7.1"
-    },
-    "build-essential": {
-      "locked_version": "2.0.0"
-    },
-    "apt": {
-      "locked_version": "2.3.8"
-    },
-    "ohai": {
-      "locked_version": "2.0.0"
-    },
-    "dmg": {
-      "locked_version": "2.2.0"
-    },
-    "windows": {
-      "locked_version": "1.30.0"
-    },
-    "chef_handler": {
-      "locked_version": "1.1.5"
-    },
-    "runit": {
-      "locked_version": "1.5.10"
-    },
-    "java": {
-      "locked_version": "1.22.0"
-    }
-  }
-}
+DEPENDENCIES
+  git
+  prepare-env
+    path: .
+    metadata: true
+  vim
+  yum-epel
+  yum-repoforge
+
+GRAPH
+  apt (2.6.0)
+  build-essential (2.0.6)
+  chef_handler (1.1.6)
+  dmg (2.2.0)
+  git (4.0.2)
+    build-essential (>= 0.0.0)
+    dmg (>= 0.0.0)
+    runit (>= 1.0.0)
+    windows (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  ohai (2.0.1)
+  prepare-env (0.1.0)
+    git (>= 0.0.0)
+    rbenv (>= 0.0.0)
+    vim (>= 0.0.0)
+    yum (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+    yum-repoforge (>= 0.0.0)
+  rbenv (1.7.1)
+    apt (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    git (>= 0.0.0)
+    ohai (>= 1.1)
+  runit (1.5.10)
+    build-essential (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  vim (1.1.2)
+  windows (1.34.6)
+    chef_handler (>= 0.0.0)
+  yum (3.3.2)
+  yum-epel (0.5.1)
+    yum (~> 3.0)
+  yum-repoforge (0.4.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)

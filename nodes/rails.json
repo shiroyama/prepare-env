@@ -1,7 +1,6 @@
 {
     "run_list":[
         "role[prepare]",
-        "role[rails]",
-        "role[solr]"
+        "role[rails]"
     ]
 }

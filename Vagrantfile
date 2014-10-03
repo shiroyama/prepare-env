@@ -8,15 +8,15 @@ Vagrant.configure("2") do |config|
   config.vm.hostname = "vagrant-guest"
 
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "CentOS-6.4-x86_64-v20130731"
+  config.vm.box = "CentOS-6.4-x86_64-Minimal-chef-11"
 
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
-  config.vm.box_url = "http://developer.nrel.gov/downloads/vagrant-boxes/CentOS-6.4-x86_64-v20130731.box"
+  config.vm.box_url = "http://developer.nrel.gov/downloads/vagrant-boxes/CentOS-6.4-x86_64-v20131103.box"
 
   config.vm.define :rails do |rails|
     rails.vm.network :private_network, ip: "33.33.33.100"
-    rails.vm.network :forwarded_port, host: 8080, guest: 8984
+    rails.vm.network :forwarded_port, host: 3000, guest: 3000
   end
 
   config.vm.define :backup do |backup|
@@ -97,5 +97,6 @@ Vagrant.configure("2") do |config|
   config.vm.provider :virtualbox do |vb|
     vb.customize ["modifyvm", :id, "--natdnsproxy1", "off"]
     vb.customize ["modifyvm", :id, "--natdnshostresolver1", "off"]
+    vb.customize ["modifyvm", :id, "--memory", "2048", "--cpus", "2"]
   end
 end
