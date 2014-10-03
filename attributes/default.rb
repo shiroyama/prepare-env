@@ -1,5 +1,5 @@
 ### rbenv
-default["rbenv"]["version"] = "2.0.0-p353"
+default["rbenv"]["version"] = "2.1.3"
 
 ### nginx
 default["nginx"]["port"]     = "80"
@@ -42,3 +42,7 @@ default['solr']['version']   = "4.6.1"
 default['solr']['repo_url']  = "http://ftp.riken.jp/net/apache/lucene/solr"
 default['solr']['file_type'] = "tgz"
 default['solr']['solr_home'] = "/usr/local/solr"
+
+### MySQL
+default['mysql']['version']              = '5.6'
+default['mysql']['server_root_password'] = 'passpass'

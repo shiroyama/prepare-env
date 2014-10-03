@@ -1,5 +1,8 @@
 DEPENDENCIES
   git
+  mysql
+    git: https://github.com/opscode-cookbooks/mysql
+    revision: 0dccc9a0b62f2423af013a5a9b7820030387bd5b
   prepare-env
     path: .
     metadata: true
@@ -19,9 +22,12 @@ GRAPH
     windows (>= 0.0.0)
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
+  mysql (5.5.3)
+    yum-mysql-community (>= 0.0.0)
   ohai (2.0.1)
   prepare-env (0.1.0)
     git (>= 0.0.0)
+    mysql (>= 0.0.0)
     rbenv (>= 0.0.0)
     vim (>= 0.0.0)
     yum (>= 0.0.0)
@@ -42,6 +48,8 @@ GRAPH
   yum (3.3.2)
   yum-epel (0.5.1)
     yum (~> 3.0)
+  yum-mysql-community (0.1.10)
+    yum (>= 3.0)
   yum-repoforge (0.4.0)
     yum (~> 3.0)
     yum-epel (>= 0.0.0)

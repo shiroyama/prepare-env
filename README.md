@@ -19,11 +19,13 @@ homesick の設定を変えるために `default['homesick']['repo']` をあな�
 * bundler
 * rails
 * nginx
+* mysql-client
 * mysql-server
 
 をインストールする。
 
-Ruby のバージョンは `default["rbenv"]["version"] = "2.0.0-p353"` で変更する。
+Ruby のバージョンは `default["rbenv"]["version"] = "2.1.3"` の attribute で変更する。  
+MySQL のバージョンは `default['mysql']['version'] = '5.6'` の attribute で変更する。
 
 unicorn は各 Rails アプリケーションの Gemfile に書くだろうと想定してここではインストールしていないが、nginx の設定で upstream の unicorn と接続する設定を定義してあるので `default["rails"]["server"]["socket"]` あたりの attribute は注意する必要がある。
 
@@ -40,7 +42,7 @@ unicorn は各 Rails アプリケーションの Gemfile に書くだろうと�
 # Usage
 
     % bundle --path vendor/bundle
-    % berkes vendor ./cookbooks
+    % bundle exec berks vendor ./cookbooks
     % vagrant up rails
     % bundle exec knife solo prepare rails
     % bundle exec knife solo cook rails --no-berkshelf
