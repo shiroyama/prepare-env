@@ -10,6 +10,8 @@
 
 include_recipe 'prepare-env::yum-repos'
 
-package "ImageMagick" do
+%w{ImageMagick ImageMagick-devel}.each do |pkg|
+  package pkg do
     action :install
+  end
 end
